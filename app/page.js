@@ -115,7 +115,7 @@ export default async function HomePage() {
 
       {/* Mejor Valoradas */}
       <section className="py-12">
-        <div className="container mx-auto px-4">
+        <div className="containerr mx-auto px-4">
           <h3 className="text-3xl font-bold mb-8 text-center">
             ⭐ Mejor <span className="text-red-600">Valoradas</span>
           </h3>
