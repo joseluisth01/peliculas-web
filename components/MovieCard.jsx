@@ -3,7 +3,22 @@ import Link from 'next/link';
 import { getImageUrl } from '../lib/tmdb';
 import { Star, Play } from 'lucide-react';
 
-export default function MovieCard({ movie }) {
+// Define la interfaz de película
+interface Movie {
+  id: number;
+  title: string;
+  poster_path: string;
+  overview: string;
+  vote_average: number;
+  release_date: string;
+}
+
+// Actualiza el tipo de las props
+interface MovieCardProps {
+  movie: Movie;
+}
+
+export default function MovieCard({ movie }: MovieCardProps) {
   return (
     <div className="group relative bg-gray-900 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
       {/* Imagen de la película */}
